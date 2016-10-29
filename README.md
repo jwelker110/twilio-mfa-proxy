@@ -4,7 +4,7 @@ to forward messages to multiple users at once
 
 ### Instructions
 1. [Install Composer](https://getcomposer.org/download/) if it isn't already.
-2. `php composer.phar require twilio/sdk`
+2. `php composer.phar install`
 3. Create `config.json` and configure it based on the `config_example.json`.
     - Phone numbers should be formatted [correctly](https://www.twilio.com/docs/api/rest/sending-messages#post-parameters) to ensure
     messages are forwarded correctly.
