@@ -1,0 +1,8 @@
+{
+    "contacts": {
+        "John": "+11234567890"
+    },
+    "from": "TwilioPhoneNumber",
+    "token": "TwilioAuthToken",
+    "sid": "TwilioSID"
+}
