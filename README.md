@@ -6,6 +6,9 @@ to forward messages to multiple users at once
 1. [Install Composer](https://getcomposer.org/download/) if it isn't already.
 2. `php composer.phar require twilio/sdk`
 3. Create `config.json` and configure it based on the `config_example.json`.
+    - Phone numbers should be formatted [correctly](https://www.twilio.com/docs/api/rest/sending-messages#post-parameters) to ensure
+    messages are forwarded correctly.
+    - Twilio information can be found on the [Console](https://www.twilio.com/console).
 ```
 {
     "contacts": {
@@ -17,9 +20,6 @@ to forward messages to multiple users at once
     "sid": "TwilioSID"
 }
 ```
-- Phone numbers should be formatted [correctly](https://www.twilio.com/docs/api/rest/sending-messages#post-parameters) to ensure
-messages are forwarded correctly.
-- Twilio information can be found on the [Console](https://www.twilio.com/console).
 4. Configure the desired phone number to utilize the proxy webhook by clicking
 the desired [phone number](https://www.twilio.com/console/phone-numbers/incoming).
     1. In the "Messaging" section, locate the "Configure with" dropdown and choose `Webhooks/TwiML`
