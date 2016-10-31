@@ -7,13 +7,13 @@ to forward messages to multiple users at once
 2. `php composer.phar install`
 3. Create `config.json` and configure it based on the `config_example.json`.
     - Phone numbers should be formatted [correctly](https://www.twilio.com/docs/api/rest/sending-messages#post-parameters) to ensure
-    messages are forwarded correctly.
+    messages are forwarded correctly. (Include the country code)
     - Twilio information can be found on the [Console](https://www.twilio.com/console).
     ```
     {
         "contacts": {
-            "John": "ContactPhoneNumber",
-            "Jane": "ContactPhoneNumber"
+            "John": "+12223334444",
+            "Jane": "+12223334444"
         },
         "from": "TwilioPhoneNumber",
         "token": "TwilioAuthToken",

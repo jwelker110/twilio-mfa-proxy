@@ -1,6 +1,7 @@
 {
     "contacts": {
-        "John": "+11234567890"
+        "John": "+1phoneNumber",
+        "Jane": "+1phoneNumber"
     },
     "from": "TwilioPhoneNumber",
     "token": "TwilioAuthToken",
