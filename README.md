@@ -5,12 +5,14 @@ to forward messages to multiple users at once
 ### Instructions
 1. [Install Composer](https://getcomposer.org/download/) if it isn't already. Paste the following
     lines in terminal.
+    
     ```
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
     php -r "if (hash_file('SHA384', 'composer-setup.php') === 'e115a8dc7871f15d853148a7fbac7da27d6c0030b848d9b3dc09e2a0388afed865e6a3d6b3c0fad45c48e2b5fc1196ae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
     php composer-setup.php
     php -r "unlink('composer-setup.php');"
     ```
+    
 2. Paste `php composer.phar install` in terminal to install the required Twilio library.
 3. Create `config.json` and configure it based on the `config_example.json`.
     - Phone numbers should be formatted [correctly](https://www.twilio.com/docs/api/rest/sending-messages#post-parameters) to ensure
