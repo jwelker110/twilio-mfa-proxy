@@ -14,7 +14,6 @@ to forward messages to multiple users at once
     ```
     
 2. Paste `php composer.phar install` in terminal to install the required Twilio library.
-    - If you would rather not use Composer, manually [install](https://www.twilio.com/docs/libraries/php#using-without-composer) the SDK.
 3. Create `config.json` and configure it based on the `config_example.json`.
     - Phone numbers should be formatted [correctly](https://www.twilio.com/docs/api/rest/sending-messages#post-parameters) to ensure
     messages are forwarded correctly. (Include the country code)
